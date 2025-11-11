@@ -1,0 +1,211 @@
+/* RESET DASAR */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    width: 85%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* HEADER & NAVIGASI */
+header {
+    background-color: #fafbfc; /* Hijau Tua Khas Sekolah */
+    color: rgb(39, 31, 31);
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.imglogo {
+    height: 40px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+nav a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    margin-left: 20px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ffd700; /* Kuning Emas */
+}
+
+.cta-button {
+    background-color: #ffd700;
+    color: #004d40 !important;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+/* HERO SECTION */
+.hero-section {
+    background-color: #e0f2f1; /* Hijau Muda */
+    background-image: url('school-hero.jpg'); /* Ganti dengan gambar sekolah */
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    text-align: center;
+    color: #004d40;
+}
+
+.hero-section h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    color: #004d40;
+}
+
+.hero-section h2 {
+    font-weight: 400;
+    font-size: 1.5em;
+    margin-bottom: 5px;
+}
+
+.hero-section p {
+    font-size: 1.1em;
+    margin-bottom: 30px;
+}
+
+.main-cta-btn {
+    display: inline-block;
+    background-color: #ff6f00; /* Oranye */
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.main-cta-btn:hover {
+    background-color: #e65100;
+}
+
+/* BAGIAN LAIN (Keunggulan, Program, CTA) */
+section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.keunggulan-section {
+    background-color: #ffffff;
+}
+
+.keunggulan-section h3, .program-section h3 {
+    font-size: 2em;
+    margin-bottom: 40px;
+    color: #004d40;
+}
+
+.keunggulan-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.card {
+    flex: 1;
+    background-color: #f1f8e9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card h4 {
+    color: #ff6f00;
+    margin-bottom: 10px;
+}
+
+.program-section {
+    background-color: #f0f4c3; /* Kuning Muda */
+}
+
+.program-section ul {
+    list-style: none;
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.program-section li {
+    background: #fff;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-left: 5px solid #004d40;
+    border-radius: 5px;
+}
+
+/* CTA AKHIR */
+.cta-akhir {
+    background-color: #004d40;
+    color: white;
+    padding: 80px 0;
+}
+
+.cta-akhir h2 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+}
+
+.cta-akhir p {
+    margin-bottom: 25px;
+}
+
+.contact-info {
+    margin-top: 20px;
+}
+
+/* FOOTER */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    font-size: 0.9em;
+}
+
+footer p {
+    text-align: center;
+}
+
+/* Media Queries untuk Responsif */
+@media (max-width: 768px) {
+    .nav-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    nav {
+        margin-top: 10px;
+    }
+    nav a {
+        margin: 0 5px;
+        display: inline-block;
+    }
+    .keunggulan-list {
+        flex-direction: column;
+    }
+}
